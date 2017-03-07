@@ -7,10 +7,13 @@
 //          (4) detect the following three conditions: successful completion of the game, if the game has reached a point where no further valid moves are possible, or if there are still remaining valid moves available.
 
 #include "stdafx.h"
+#include "common.h"
+#include "ninealmonds.h"
 
-
-int main()
+int main(int argc,char * argv[])
 {
-    return 0;
+	NineAlmonds newgame;
+	cout << newgame << endl;
+    return SUCCESS;
 }
 

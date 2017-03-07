@@ -5,6 +5,10 @@
 //          Declare an enumeration for the different success and failure values my program
 //          Declare functions 
 #pragma once
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
 
 enum ArrayIndices
 {

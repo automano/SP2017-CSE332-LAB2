@@ -1,40 +1,24 @@
-========================================================================
-    CONSOLE APPLICATION : lab2 Project Overview
-========================================================================
+// Name and Student ID
+Zhening Li 445612
 
-AppWizard has created this lab2 application for you.
+// Lab Number
+Lab 2
 
-This file contains a summary of what you will find in each of the files that
-make up your lab2 application.
+// Purpose
+          (1) repeatedly display the current state of a single-player game
+          (2) prompt the user and receive input for the next move in the game
+          (3) check whether or not each input move is valid, and if it is update the game state
+          (4) detect the following three conditions: successful completion of the game, if the game has reached a point where no further valid moves are possible, or if there are still remaining valid moves available.
 
+// Error 
+// #1
+Code:  game_piece[y*GAMEBOARD_HORIZONTAL_SIZE + x] = " ";
 
-lab2.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
+Decription:
+     Severity	Code	Description	Project	File	Line	Suppression State
+Error (active)		no operator "=" matches these operands	lab2	d:\Project\CSE504\lab2\lab2\ninealmonds.cpp	29	
 
-lab2.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
+Solution: game_piece[y*GAMEBOARD_HORIZONTAL_SIZE + x].push_back(" ");
 
-lab2.cpp
-    This is the main application source file.
+//
 
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named lab2.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////

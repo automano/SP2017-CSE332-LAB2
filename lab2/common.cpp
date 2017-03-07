@@ -6,12 +6,6 @@
 //          Define functions (Usage Message, Lowercase)
 
 #include "stdafx.h"
-
-#include <iostream>
-#include <vector>
-#include <string>
-using namespace std;
-
 #include "common.h"
 
 const int A_to_a = 32; // 'A'-'a'=32
