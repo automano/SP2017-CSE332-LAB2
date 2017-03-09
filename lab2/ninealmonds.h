@@ -17,9 +17,13 @@ class NineAlmonds {
 	friend ostream & operator<<(ostream &os, const NineAlmonds &game_board);
 private:
 	vector<string> game_piece;
-	unsigned int turn;
+	unsigned int turn_s;
 public:
 	NineAlmonds();
+	bool done();
+	bool stalemate();
+	int prompt(unsigned int &x, unsigned int &y);
+	int turn();
 };
 
 ostream & operator<<(ostream &os, const NineAlmonds &game_board);

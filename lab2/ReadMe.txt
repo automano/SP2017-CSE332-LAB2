@@ -12,13 +12,7 @@ Lab 2
 
 // Error 
 // #1
-Code:  game_piece[y*GAMEBOARD_HORIZONTAL_SIZE + x] = " ";
 
-Decription:
-     Severity	Code	Description	Project	File	Line	Suppression State
-Error (active)		no operator "=" matches these operands	lab2	d:\Project\CSE504\lab2\lab2\ninealmonds.cpp	29	
-
-Solution: game_piece[y*GAMEBOARD_HORIZONTAL_SIZE + x].push_back(" ");
 
 //
 

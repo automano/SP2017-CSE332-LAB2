@@ -13,6 +13,7 @@
 int main(int argc,char * argv[])
 {
 	NineAlmonds newgame;
+	int test = newgame.turn();
 	cout << newgame << endl;
     return SUCCESS;
 }
