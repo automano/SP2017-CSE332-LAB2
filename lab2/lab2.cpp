@@ -10,11 +10,19 @@
 #include "common.h"
 #include "ninealmonds.h"
 
-int main(int argc,char * argv[])
+int main(int argc, char *argv[])
 {
-	NineAlmonds newgame;
-	int test = newgame.turn();
-	cout << newgame << endl;
-    return SUCCESS;
+	if (argc == CDM_ARGUMENTS_NUMBER&&strcmp(argv[GAME_NAME], "NineAlmonds") == 0)
+	{
+		NineAlmonds newgame;
+		int test = newgame.turn();
+		return SUCCESS;
+	}
+	else
+	{
+		char * program_name = argv[PROGRAM_NAME];
+		char * second_argument = "NineAlmonds";
+		return UsageMessage(program_name, second_argument);// call usage message 
+	}
 }
 

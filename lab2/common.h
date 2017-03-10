@@ -13,7 +13,7 @@ using namespace std;
 enum ArrayIndices
 {
 	PROGRAM_NAME,
-	INPUT_FILE_NAME,
+	GAME_NAME,
 	CDM_ARGUMENTS_NUMBER
 };
 
@@ -32,7 +32,12 @@ enum ProgramStatus
 	FAIL_EXTRACT_COORDINATES,
 	INPUT_OUT_OF_RANGE,
 	NO_COMMA,
-	QUIT_GAME
+	QUIT_GAME,
+	INVALID_MOVE,
+	USER_END_TURN,
+	NEW_TURN,
+	STALEMATE,
+	CONTINUE_GAME
 };
 
 int UsageMessage(char * program_name, char * promote);

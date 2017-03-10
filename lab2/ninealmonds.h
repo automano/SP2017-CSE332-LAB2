@@ -12,6 +12,8 @@ using namespace std;
 
 const int GAMEBOARD_HORIZONTAL_SIZE = 5;
 const int GAMEBOARD_VERTICAL_SIZE = 5;
+const string ALMOND = "A";
+const string EMPTY = " ";
 
 class NineAlmonds {
 	friend ostream & operator<<(ostream &os, const NineAlmonds &game_board);
@@ -24,6 +26,7 @@ public:
 	bool stalemate();
 	int prompt(unsigned int &x, unsigned int &y);
 	int turn();
+	int play();
 };
 
 ostream & operator<<(ostream &os, const NineAlmonds &game_board);
