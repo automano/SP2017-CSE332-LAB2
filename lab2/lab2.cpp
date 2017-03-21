@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 	if (argc == CDM_ARGUMENTS_NUMBER&&strcmp(argv[GAME_NAME], "NineAlmonds") == 0)
 	{
 		NineAlmonds newgame;
-		int test = newgame.turn();
-		return SUCCESS;
+		cout << endl << "Begin Game NineAlmonds!" << endl << endl;
+		return newgame.play();
 	}
 	else
 	{

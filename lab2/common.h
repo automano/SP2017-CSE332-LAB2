@@ -37,7 +37,8 @@ enum ProgramStatus
 	USER_END_TURN,
 	NEW_TURN,
 	STALEMATE,
-	CONTINUE_GAME
+	CONTINUE_GAME,
+	INVALID_INPUT
 };
 
 int UsageMessage(char * program_name, char * promote);

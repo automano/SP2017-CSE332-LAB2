@@ -27,6 +27,7 @@ public:
 	int prompt(unsigned int &x, unsigned int &y);
 	int turn();
 	int play();
+	int validmove(unsigned int x_o, unsigned int y_o, unsigned int x_d, unsigned int y_d);
 };
 
 ostream & operator<<(ostream &os, const NineAlmonds &game_board);
